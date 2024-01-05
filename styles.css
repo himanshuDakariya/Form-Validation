@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border: 10px solid black;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}    
+h1{
+   
+    color:white
+}   
+
+.child1{
+    background-color: rgb(169, 45, 65);
+    height: 70%;
+    width: 100%;
+}
+.child3{
+    background-color: rgb(14, 134, 178);
+    height: 30%;
+    width: 100%;
+}
+.box{
+    margin: 100px auto;
+    padding: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 400px;
+    width: 900px;
+    background-color: #c1b1a1;
+
+    
+}
+.radio {
+    
+    display: flex;
+    justify-content:space-evenly;
+    width: 200px;
+}
+.box input{
+    
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px;
+
+}
+#age{
+    height:30px;
+    border-radius: 5px;
+}
+button{
+    width: 80px;
+}

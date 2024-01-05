@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="styles.css">
+<html>
+<body>
+
+  <div class="parent">
+
+    <div class="child1">
+      <center><h1>Railway Reservation </h1><centre></center>
+
+        <div class="box">
+          <input type="text" placeholder="Username" id="name">
+          <select id="age" >
+            <option selected disabled>Age group</option>
+            <option value="Child">Child</option>
+            <option value="Adult">Adult</option>
+            <option value="Senior">Senior</option>
+          </select>
+          <input type="number" placeholder="Age" id="agecount">
+
+          <div class="radio">
+          <input type="radio" name="button">Roadways
+          / 
+          <input type="radio" name="button">Airways
+          </div>
+
+          <button type="button" onclick="check()">Submit</button>
+        </div>
+    </div>
+    
+    <div class="child3">
+      
+    </div>
+  </div>
+<script>
+function check(){
+var user=document.getElementById("name").value;
+var agegroup=document.getElementById("age").value;
+var ageco=document.getElementById("agecount").value;
+
+if (user.length > 10){
+  alert("Invalid username!")}
+if(agegroup=="Child"){
+  if(ageco > 18){
+    alert("Child age must be less than 18!!")}}
+if(agegroup=="Adult"){
+  if(ageco < 18 || ageco >45){
+    alert("Adult age must be between 18 - 45")}}
+if(agegroup=="Senior"){
+  if(ageco < 45 || ageco >100){
+    alert("Senior citizen's age must be between 45 - 100")}}
+if(user.length==0){
+  alert("ALL FIELDS ARE MANDATORY TO BE FILLED!")}
+if(agegroup=""){
+  alert("ALL FIELDS ARE MANDATORY TO BE FILLED!")}
+if(ageco==0){
+  alert("ALL FIELDS ARE MANDATORY TO BE FILLED!")
+}}
+</script>
+</body>
+</html>
